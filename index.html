@@ -1,0 +1,149 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SukeRT</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <div class="logo">sukeRT</div>
+            <ul>
+                <li> <a href="#beranda" class="nav-link">Beranda</a></li>
+                <li> <a href="#about" class="nav-link">Tentang Kami</a></li>
+                <li> <a href="#fitur" class="nav-link">Fitur</a></li>
+                <li> <a href="#kontak" class="nav-link">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section id="beranda" class="hero">
+        <h1>Selamat Datang di SukeRT</h1>
+        <p>Partner Anda Dalam Pengurusan Surat Keterangan RT </p>
+        <a href="#kontak" class="cta-button">Hubungi Kami</a>
+    </section>
+
+    <section id="about"> 
+        <h2>Tentang Kami</h2> 
+        <p>Kami Menyediakan Layanan Surat Keterangan RT</p>
+    </section>
+
+    <section id="fitur">
+        <h2>Fitur Kami</h2>
+        <div class="fitur"></div>
+            <h3>Surat Keterangan</h3>
+            <p>Anda Bisa Mengajukan Surat Keterangan Disini</p>
+
+            <form>
+                <label for="tipe-ajuan">Tipe Ajuan</label>
+                <select id="surat-keterangan" name="surat-keterangan">
+                    <option value="suratKeteranganTidakMampu">surat Keterangan Tidak Mampu</option>
+                    <option value="suratKeteranganSlipGaji ">Surat Keterangan Slip Gaji</option>
+                    <option value="suratKeteranganPendudukWargaBaru">Surat Keterangan Penduduk Warga Baru</option>
+                    <option value="suratKeteranganPindahKependudukan">Surat Keterangan Pindah Kependudukan</option>     
+                </select>
+
+                <br>
+            </br>
+
+                <label for="Nama Lengkap">Nama Lengkap</label> 
+                <input type="text" id="nama" name="nama" required>
+                
+                <br>
+            </br>   
+    
+                <label for="ttl">Tempat & Tanggal Lahir</label>
+                <input type="text" id="ttl" name="ttl" required>
+                
+                <br>
+            </br>
+
+                <label>Jenis Kelamin</label>
+                <div class="radio-kelamin">
+                    <input type="radio" id="laki-laki" name="jenis-kelamin" value="Laki-Laki" required>
+                    <label for="laki-laki">Laki-Laki</label>
+                    <input type="radio" id="perempuan" name="jenis-kelamin" value="Perempuan" required>
+                    <label for="perempuan">Perempuan</label> 
+                </div>
+
+                <br>
+            </br>
+
+                <label for="agama">Agama</label>
+                <input type="text" id="agama" name="agama" required>
+                
+                <br>
+            </br>
+
+                <label for="pekerjaan">Pekerjaan</label>
+                <input type="text" id="pekerjaan" name="pekerjaan" required>
+
+                <br>
+            </br>
+
+                <label for="kwn">Kewarganegaraan</label>
+                <div class="radio-kwn">   
+                    <input type="radio" id="WNI" name="WNI" value="WNI" required>
+                    <label for="WNI">WNI</label>
+                    <input type="radio" id="WNA" name="WNA" value="WNA" required>
+                    <label for="WNA">WNA</label> 
+                </div> 
+
+                    <br>
+                </br>
+                <label for="status-pernikahan">Status Pernikahan</label>
+                <div class="radio-pernikahan">
+                    <input type="radio" id="sudah-menikah" name="sudah-menikah" value="sudah-menikah" required>
+                    <label for="sudah-menikah">Sudah Menikah</label>
+                    <input type="radio" id="belum-menikah" name="belum-menikah" value="belum-menikah" required>
+                    <label for="belum-menikah">Belum Menikah</label>
+                </div>
+
+                    <br>
+                </br>
+
+                    <label for="nik">No. NIK</label>
+                    <input type="text" id="nik" name="nik" required>
+                
+                    <br>
+                </br>
+
+                    <label for="rt-rw">RT/RW</label>
+                    <input type="text" id="rt-rw" name="rt-rw" required>
+                
+                    <br>
+                </br>
+
+                    <label for="alamat">Alamat</label>
+                    <input type="text" id="alamat" name="alamat" required>
+        
+                    <br>
+                </br>
+
+                    <label for="alasan">Alasan Kebutuhan Surat</label>
+                    <textarea id="alasan" name="alasan" required></textarea>
+
+                    <button type="submit">Submit</button>
+                </form>
+    </section>
+
+    <section id="kontak">
+        <h2>Hubungi Kami</h2>
+        <form>
+            <label for="nama">Nama</label>
+            <input type="text" id="nama" name="nama" required>
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" required>
+            <label for="pesan">Pesan</label>
+            <textarea id="pesan" name="pesan" required></textarea>
+
+            <button type="submit">Kirim</button>
+        </form>
+        
+    </section>
+</body>
+</html>
